@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule /bootstrap_prac/(.*) /bootstrap_prac/public/$1
