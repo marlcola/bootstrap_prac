@@ -1,26 +1,277 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
-    <title>Twitter Bootstrap の練習</title>
-    
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
-  </head>
+        <title>Twitter Bootstrap の練習</title>
 
-  <body>
+        <!-- Bootstrap core CSS -->
+        <link href="../dist/css/bootstrap.css" rel="stylesheet">
+    </head>
 
-      <h1>Hello World</h1>
-      
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Masaki Mori</a>
+            </div>
+
+            <div class="collapse navbar-collapse target">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link 01</a></li>
+                    <li><a href="#">Link 02</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link 03</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="header" class="container" style="background: red">header</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs" style="background: yellow">Side 1</div>
+                <div class="col-sm-6 col-xs-6" style="background: green">Main</div>
+                <div class="col-sm-3 col-xs-6" style="background: orange">Side 2</div>
+            </div>    
+        </div>
+
+        <div class="container">
+            <table class="table table-bordered table-condensed table-hover table-responsive table-striped" style="margin-top: 20px">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kondo</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Imanami</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Nishikawa</td>
+                        <td>350</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" style="margin-top: 20px">
+            <form action="#">
+                <div class="form-group">
+                    <label for="email" class="control-label">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="email@mail.com" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="submit" class="btn btn-primary" />
+                </div>
+            </form>
+
+            <form action="#" class="form-inline" style="margin-bottom: 20px">
+                <div class="form-group">
+                    <label for="name" class="sr-only control-label">Name</label>
+                    <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="submit" class="btn btn-primary" />
+                </div>
+            </form>
+
+            <form action="#" class="form-horizontal" style="margin-bottom: 20px">
+                <div class="form-group">
+                    <label for="address" class="control-label col-sm-2">Address</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="address" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="control-label col-sm-2">Phone</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="phone" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <input type="submit" value="submit" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+
+            <div class="container" style="margin-top: 20px; margin-bottom: 20px">
+                <p><i class="glyphicon glyphicon-book"></i> Book</p>
+
+                <button class="btn btn-primary">Push Me!!</button>
+
+                <div class="btn-group">
+                    <button class="btn btn-success"><i class="glyphicon glyphicon-star"></i> Success!!</button>
+                    <button class="btn btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Warning!!</button>
+                    <button class="btn btn-danger"><i class="glyphicon glyphicon-fire"></i> Denger!!</button>
+                </div>
+            </div>
+
+            <div class="container" style="margin: 20px auto">
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action 01</a></li>
+                        <li><a href="#">Action 02</a></li>
+                        <li><a href="#">Action 03</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-primary ">
+                        Action
+                    </button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action 01</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Action 02_01</a></li>
+                        <li><a href="#">Action 02_02</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Users</a></li>
+                <li class="active">Masaki</li>
+            </ul>
+
+            <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+
+            <ul class="pager">
+                <li class="previous"><a href="#">前へ</a></li>
+                <li class="next"><a href="#">次へ</a></li>
+            </ul>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <p>Product A <span class="label label-info">New</span></p>
+            <p>InBox <span class="badge">5</span></p>
+
+            <div class="alert alert-warning">
+                <button class="close" data-dismiss="alert">&times;</button>
+                注意してください！
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    お知らせ
+                </div>
+                <div class="panel-body">
+                    もう秋ですね。
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+            </div>
+
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+            </div>
+
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-danger" style="width: 20%"></div>
+                <div class="progress-bar progress-bar-info" style="width: 30%"></div>
+                <div class="progress-bar progress-bar-warning" style="width: 40%"></div>
+                <div class="progress-bar progress-bar-success" style="width: 10%"></div>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <a href="#myModal" class="btn btn-primary" data-toggle="modal">Push Me!!</a>
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <div class="modal-title">
+                                My Modal
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            こんにちは！
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">OK!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#about" data-toggle="tab">About</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" style="padding: 20px">ホームです。</div>
+                <div class="tab-pane" id="about" style="padding: 20px">アバウトです。</div>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 20px auto">
+
+            <p>
+                <a href="#" data-toggle="tooltip" title="説明">this</a> and 
+                <a href="#" data-toggle="popover" title="説明" data-content="更に説明">that</a>.
+            </p>
+        </div>
+
+        <div id="footer" class="container" style="background: blue">footer</div>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../dist/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function () {
+                $("[data-toggle=tooltip]").tooltip({
+                    placement: 'bottom'
+                });
+                
+                $("[data-toggle=popover]").popover();
+            });
+        </script>
+    </body>
 </html>
